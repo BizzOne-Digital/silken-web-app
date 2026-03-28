@@ -64,7 +64,7 @@ export default function ReviewCard({ review, index = 0, className }: ReviewCardP
         transition: { duration: 0.3 },
       }}
       className={cn(
-        "rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors duration-300",
+        "rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-colors duration-300 sm:p-6",
         className
       )}
       style={{ opacity: 0 }}

@@ -50,10 +50,10 @@ export default function Navbar() {
         }}
       />
 
-      <nav className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3 outline-none group">
+      <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
+        <Link href="/" className="flex items-center gap-2 outline-none group sm:gap-3">
           <motion.div
-            className="relative h-12 w-12 shrink-0 sm:h-14 sm:w-14"
+            className="relative h-10 w-10 shrink-0 sm:h-12 sm:w-12"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
@@ -66,28 +66,28 @@ export default function Navbar() {
               priority
             />
           </motion.div>
-          <span className="hidden font-display text-xl tracking-wide text-gold-primary sm:block md:text-2xl group-hover:text-yellow-glow transition-colors">
+          <span className="font-display text-lg tracking-wide text-gold-primary sm:text-xl lg:text-2xl group-hover:text-yellow-glow transition-colors">
             Silken Trading
           </span>
         </Link>
 
-        <div className="hidden md:flex md:items-center md:gap-0.5">
+        <div className="hidden lg:flex lg:items-center lg:gap-0.5">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="nav-link relative px-4 py-2.5 text-sm font-medium text-yellow-pastel/90"
+              className="nav-link relative px-3 py-2.5 text-sm font-medium text-yellow-pastel/90 xl:px-4"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <div className="hidden md:flex md:items-center md:gap-3">
+        <div className="hidden lg:flex lg:items-center lg:gap-3">
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
             <Link
               href="/products"
-              className="rounded-lg border border-gold-primary/50 px-5 py-2.5 text-sm font-medium text-gold-primary transition-all duration-300 hover:border-gold-primary hover:bg-gold-primary/10 hover:shadow-[0_0_24px_rgba(249,200,51,0.2)]"
+              className="rounded-lg border border-gold-primary/50 px-4 py-2 text-sm font-medium text-gold-primary transition-all duration-300 hover:border-gold-primary hover:bg-gold-primary/10 hover:shadow-[0_0_24px_rgba(249,200,51,0.2)] xl:px-5 xl:py-2.5"
             >
               Shop
             </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
             <Link
               href="/contact"
-              className="rounded-lg bg-gradient-to-r from-gold-primary to-yellow-glow px-5 py-2.5 text-sm font-semibold text-luxury-black shadow-[0_0_20px_rgba(249,200,51,0.25)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(249,200,51,0.4)]"
+              className="rounded-lg bg-gradient-to-r from-gold-primary to-yellow-glow px-4 py-2 text-sm font-semibold text-luxury-black shadow-[0_0_20px_rgba(249,200,51,0.25)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(249,200,51,0.4)] xl:px-5 xl:py-2.5"
             >
               Book Installation
             </Link>
@@ -104,12 +104,12 @@ export default function Navbar() {
 
         <motion.button
           type="button"
-          className="rounded-xl p-3 text-yellow-pastel transition-colors hover:bg-gold-primary/10 hover:text-gold-primary md:hidden"
+          className="rounded-xl p-2.5 text-yellow-pastel transition-colors hover:bg-gold-primary/10 hover:text-gold-primary lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           whileTap={{ scale: 0.95 }}
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </motion.button>
       </nav>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden overflow-hidden border-t border-gold-primary/20 bg-luxury-black/98 backdrop-blur-xl"
+            className="lg:hidden overflow-hidden border-t border-gold-primary/20 bg-luxury-black/98 backdrop-blur-xl"
           >
             <div className="flex flex-col gap-0 px-4 py-5">
               {navLinks.map((link, i) => (

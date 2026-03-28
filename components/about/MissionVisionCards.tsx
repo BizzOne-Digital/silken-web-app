@@ -73,17 +73,17 @@ export default function MissionVisionCards() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2
           ref={headingRef}
-          className="font-display text-2xl text-gold-primary sm:text-3xl mb-12"
+          className="font-display text-xl text-gold-primary sm:text-2xl lg:text-3xl mb-8 sm:mb-12"
           style={{ opacity: 0 }}
         >
           Mission &amp; Vision
         </h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
           {cards.map((card, i) => (
             <div
               key={card.title}
               ref={(el) => { cardsRef.current[i] = el; }}
-              className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br ${card.gradient} p-8 backdrop-blur-sm transition-all duration-300 hover:border-gold-primary/30 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.3),0_0_30px_rgba(249,200,51,0.1)] hover:-translate-y-1.5`}
+              className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br ${card.gradient} p-6 backdrop-blur-sm transition-all duration-300 hover:border-gold-primary/30 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.3),0_0_30px_rgba(249,200,51,0.1)] hover:-translate-y-1.5 sm:p-8`}
               style={{ opacity: 0 }}
             >
               <span className="text-3xl">{card.icon}</span>

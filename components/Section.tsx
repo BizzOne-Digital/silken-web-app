@@ -110,7 +110,7 @@ export function SectionHeading({
     <div ref={headingRef} className={cn("text-center", className)}>
       <h2
         data-gsap
-        className="font-display text-3xl tracking-wide text-white sm:text-4xl md:text-5xl"
+        className="font-display text-2xl tracking-wide text-white sm:text-3xl md:text-4xl"
         style={{ opacity: 0 }}
       >
         {title}

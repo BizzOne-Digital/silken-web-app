@@ -66,13 +66,13 @@ export default function FAQAccordion({ items, className }: FAQAccordionProps) {
               className="overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-gold-primary/30 hover:shadow-[0_0_25px_rgba(249,200,51,0.08)]"
             >
               <Accordion.Header>
-                <Accordion.Trigger className="flex w-full items-center justify-between px-6 py-4 text-left font-medium text-yellow-pastel transition-colors hover:text-gold-primary [&[data-state=open]]:text-gold-primary [&[data-state=open]>svg]:rotate-180">
+                <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium text-yellow-pastel transition-colors hover:text-gold-primary sm:px-6 sm:text-base [&[data-state=open]]:text-gold-primary [&[data-state=open]>svg]:rotate-180">
                   {item.question}
                   <ChevronDown className="h-5 w-5 shrink-0 text-gold-primary transition-transform duration-300 ease-out" />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up overflow-hidden">
-                <div className="border-t border-white/10 px-6 py-4 text-sm leading-relaxed text-yellow-pastel/80">
+                <div className="border-t border-white/10 px-4 py-4 text-sm leading-relaxed text-yellow-pastel/80 sm:px-6">
                   {item.answer}
                 </div>
               </Accordion.Content>

@@ -59,7 +59,7 @@ export default function HomePage() {
           }
           subtitle="Professional installation for seat covers, window visors, and car mats."
         />
-        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 grid-cols-1 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {(
             servicesData as {
               slug: string;
@@ -86,7 +86,7 @@ export default function HomePage() {
           }
           subtitle="Premium seat covers, car mats, and window visors for every vehicle."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {featuredProducts.map((product, i) => (
             <ProductCard key={product.id} product={product} index={i} />
           ))}
@@ -107,7 +107,7 @@ export default function HomePage() {
           }
           subtitle="See the difference premium interiors make. Drag the slider to compare."
         />
-        <div className="mt-14 max-w-4xl mx-auto">
+        <div className="mt-10 w-full max-w-4xl mx-auto sm:mt-14">
           <BeforeAfterSlider
             beforeImage="/images/gallery/transform-1.jpeg"
             afterImage="/images/gallery/transform-2.jpeg"
@@ -127,7 +127,7 @@ export default function HomePage() {
           }
           subtitle="Quality, expertise, and customer satisfaction at the heart of everything we do."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {whyChoose.map((item, i) => (
             <WhyChooseCard key={item.title} item={item} index={i} />
           ))}
@@ -144,7 +144,7 @@ export default function HomePage() {
           }
           subtitle="See what our customers say about their experience."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 grid-cols-1 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {(
             reviewsData as {
               id: string;

@@ -71,11 +71,11 @@ export default function WhyChooseCard({ item, index, className }: WhyChooseCardP
       style={{ opacity: 0 }}
     >
       <motion.div
-        className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gold-primary/20 text-gold-primary transition-colors duration-300 group-hover:bg-gold-primary/30"
+        className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold-primary/20 text-gold-primary transition-colors duration-300 group-hover:bg-gold-primary/30 sm:h-16 sm:w-16"
         whileHover={{ scale: 1.1, rotate: 5 }}
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
       >
-        <Icon size={32} />
+        <Icon size={28} />
       </motion.div>
       <h3 className="mt-5 font-display text-lg text-white">{item.title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-yellow-pastel/80">

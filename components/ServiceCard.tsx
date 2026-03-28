@@ -85,7 +85,7 @@ export default function ServiceCard({ service, index = 0, className }: ServiceCa
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/95 via-luxury-black/30 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
-              <h3 className="font-display text-xl text-white md:text-2xl">
+              <h3 className="font-display text-lg text-white sm:text-xl md:text-2xl">
                 {service.title}
               </h3>
             </div>

@@ -40,10 +40,10 @@ export default function Footer() {
         }}
       />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-12">
           {/* Brand column */}
-          <div className="lg:col-span-5">
+          <div className="sm:col-span-2 lg:col-span-5">
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function Footer() {
               className="flex flex-col items-start"
             >
               <Link href="/" className="flex items-center gap-3 outline-none group">
-                <div className="relative h-14 w-14 shrink-0">
+                <div className="relative h-12 w-12 shrink-0">
                   <Image
                     src="/images/logo.png"
                     alt="Silken Trading"
@@ -61,62 +61,65 @@ export default function Footer() {
                     sizes="56px"
                   />
                 </div>
-                <span className="font-display text-2xl tracking-wide text-gold-primary transition-colors group-hover:text-yellow-glow">
+                <span className="font-display text-xl tracking-wide text-gold-primary transition-colors group-hover:text-yellow-glow sm:text-2xl">
                   Silken Trading
                 </span>
               </Link>
-              <p className="mt-5 max-w-sm text-sm leading-relaxed text-yellow-pastel/70">
+              <p className="mt-4 max-w-sm text-sm leading-relaxed text-yellow-pastel/70">
                 Premium automotive interior products and professional installation. Transform your
                 car with quality seat covers, mats, and accessories.
               </p>
-              <div className="mt-6 flex flex-col gap-3 text-sm">
+              <div className="mt-5 flex flex-col gap-3 text-sm">
                 <motion.a
-                  href="tel:+1234567890"
+                  href="tel:+14372659090"
                   className="flex items-center gap-3 text-yellow-pastel/80 transition-colors hover:text-gold-primary"
                   whileHover={{ x: 4 }}
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
-                    <Phone size={16} />
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
+                    <Phone size={15} />
                   </span>
-                  +1 (234) 567-890
+                  +1 437-265-9090
                 </motion.a>
                 <motion.a
-                  href="mailto:info@silkenrading.com"
+                  href="mailto:info@silkentrading.com"
                   className="flex items-center gap-3 text-yellow-pastel/80 transition-colors hover:text-gold-primary"
                   whileHover={{ x: 4 }}
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
-                    <Mail size={16} />
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
+                    <Mail size={15} />
                   </span>
-                  info@silkenrading.com
+                  info@silkentrading.com
                 </motion.a>
-                <span className="flex items-center gap-3 text-yellow-pastel/80">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
-                    <MapPin size={16} />
+                <span className="flex items-start gap-3 text-yellow-pastel/80">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold-primary/15 text-gold-primary">
+                    <MapPin size={15} />
                   </span>
-                  Your City, State
+                  <span className="flex flex-col gap-1 text-sm">
+                    <span>96 Planchet Rd, Concord, ON L4K 2C7</span>
+                    <span>125 Village Green Square, Scarborough, ON M1S 0G3</span>
+                  </span>
                 </span>
               </div>
             </motion.div>
           </div>
 
           {/* Link columns */}
-          <div className="grid grid-cols-3 gap-8 lg:col-span-7 lg:grid-cols-3">
+          <div className="grid grid-cols-3 gap-4 sm:col-span-2 lg:col-span-7 lg:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
+              className="flex flex-col items-center text-center"
             >
-              <h3 className="font-display text-lg font-medium text-gold-primary">Shop</h3>
-              <ul className="mt-5 space-y-3">
+              <h3 className="font-display text-sm font-medium uppercase tracking-wider text-gold-primary sm:text-base">Shop</h3>
+              <ul className="mt-4 space-y-2.5">
                 {footerLinks.shop.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-2 text-sm text-yellow-pastel/70 transition-colors hover:text-gold-primary"
+                      className="text-xs text-yellow-pastel/70 transition-colors hover:text-gold-primary sm:text-sm"
                     >
-                      <span className="opacity-0 transition-all group-hover:opacity-100">→</span>
                       {link.label}
                     </Link>
                   </li>
@@ -128,16 +131,16 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.15 }}
+              className="flex flex-col items-center text-center"
             >
-              <h3 className="font-display text-lg font-medium text-gold-primary">Company</h3>
-              <ul className="mt-5 space-y-3">
+              <h3 className="font-display text-sm font-medium uppercase tracking-wider text-gold-primary sm:text-base">Company</h3>
+              <ul className="mt-4 space-y-2.5">
                 {footerLinks.company.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-2 text-sm text-yellow-pastel/70 transition-colors hover:text-gold-primary"
+                      className="text-xs text-yellow-pastel/70 transition-colors hover:text-gold-primary sm:text-sm"
                     >
-                      <span className="opacity-0 transition-all group-hover:opacity-100">→</span>
                       {link.label}
                     </Link>
                   </li>
@@ -149,16 +152,16 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.2 }}
+              className="flex flex-col items-center text-center"
             >
-              <h3 className="font-display text-lg font-medium text-gold-primary">Support</h3>
-              <ul className="mt-5 space-y-3">
+              <h3 className="font-display text-sm font-medium uppercase tracking-wider text-gold-primary sm:text-base">Support</h3>
+              <ul className="mt-4 space-y-2.5">
                 {footerLinks.support.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-2 text-sm text-yellow-pastel/70 transition-colors hover:text-gold-primary"
+                      className="text-xs text-yellow-pastel/70 transition-colors hover:text-gold-primary sm:text-sm"
                     >
-                      <span className="opacity-0 transition-all group-hover:opacity-100">→</span>
                       {link.label}
                     </Link>
                   </li>
@@ -173,16 +176,16 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row"
+          className="mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-center sm:flex-row sm:justify-between sm:text-left"
         >
-          <p className="text-sm text-yellow-pastel/50">
+          <p className="text-xs text-yellow-pastel/50 sm:text-sm">
             © {new Date().getFullYear()} Silken Trading. All rights reserved.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gold-primary transition-colors hover:text-yellow-glow"
+            className="inline-flex items-center gap-2 text-xs font-medium text-gold-primary transition-colors hover:text-yellow-glow sm:text-sm"
           >
-            Get in touch <ArrowRight size={16} />
+            Get in touch <ArrowRight size={14} />
           </Link>
         </motion.div>
       </div>

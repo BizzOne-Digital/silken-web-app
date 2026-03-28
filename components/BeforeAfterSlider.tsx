@@ -90,7 +90,7 @@ export default function BeforeAfterSlider({
         style={{ left: `${position}%`, transform: "translateX(-50%)", boxShadow: "0 0 20px rgba(249,200,51,0.6)" }}
       >
         <motion.div
-          className="absolute left-1/2 top-1/2 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-gold-primary bg-luxury-black flex items-center justify-center cursor-ew-resize"
+          className="absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-gold-primary bg-luxury-black flex items-center justify-center cursor-ew-resize sm:h-14 sm:w-14"
           whileHover={{ scale: 1.1 }}
           style={{ boxShadow: "0 0 25px rgba(249,200,51,0.4)" }}
         >

@@ -70,17 +70,17 @@ export default function AboutSection({
   }, [reverse]);
 
   return (
-    <section ref={sectionRef} className="border-b border-white/10 py-16 sm:py-24">
+    <section ref={sectionRef} className="border-b border-white/10 py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 lg:items-center">
           {/* Text */}
           <div
             ref={textRef}
             className={reverse ? "lg:order-2" : ""}
             style={{ opacity: 0 }}
           >
-            <h2 className="font-display text-2xl text-gold-primary sm:text-3xl">{title}</h2>
-            <div className="mt-6 text-yellow-pastel/90 leading-relaxed">{children}</div>
+            <h2 className="font-display text-xl text-gold-primary sm:text-2xl lg:text-3xl">{title}</h2>
+            <div className="mt-4 text-sm text-yellow-pastel/90 leading-relaxed sm:mt-6 sm:text-base">{children}</div>
           </div>
 
           {/* Image */}
@@ -100,7 +100,6 @@ export default function AboutSection({
                   (e.target as HTMLImageElement).src = "/images/placeholder.svg";
                 }}
               />
-              {/* Gold shimmer overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/60 via-transparent to-transparent" />
             </div>
           )}

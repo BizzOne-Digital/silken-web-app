@@ -69,7 +69,7 @@ function ContactHero() {
 
       <div className="absolute left-1/4 top-1/2 -translate-y-1/2 h-72 w-72 rounded-full bg-gold-primary/10 blur-[110px] pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+      <div className="relative mx-auto max-w-7xl w-full px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
         <div
           ref={badgeRef}
           className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold-primary/30 bg-gold-primary/10 px-4 py-1.5 text-sm font-medium text-gold-primary backdrop-blur-sm"
@@ -80,7 +80,7 @@ function ContactHero() {
         </div>
         <h1
           ref={headingRef}
-          className="font-display text-4xl tracking-wide text-white sm:text-5xl md:text-6xl"
+          className="font-display text-3xl tracking-wide text-white sm:text-4xl md:text-5xl lg:text-6xl"
           style={{ opacity: 0 }}
         >
           Get in{" "}
@@ -154,25 +154,25 @@ export default function ContactPage() {
     <>
       <ContactHero />
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
 
             {/* Left — contact info + image */}
             <div ref={infoRef} style={{ opacity: 0 }}>
               <h2 className="font-display text-2xl text-gold-primary">Contact Information</h2>
               <div className="mt-6 space-y-4">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+14372659090"
                   className="flex items-center gap-3 text-yellow-pastel/90 hover:text-gold-primary transition-colors"
                 >
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-primary/15 text-gold-primary">
                     <Phone size={20} />
                   </span>
-                  +1 (234) 567-890
+                  +1 437-265-9090
                 </a>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/14372659090"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-yellow-pastel/90 hover:text-gold-primary transition-colors"
@@ -182,11 +182,14 @@ export default function ContactPage() {
                   </span>
                   WhatsApp
                 </a>
-                <div className="flex items-center gap-3 text-yellow-pastel/90">
+                <div className="flex items-start gap-3 text-yellow-pastel/90">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-primary/15 text-gold-primary shrink-0">
                     <MapPin size={20} />
                   </span>
-                  Your City, State
+                  <span className="flex flex-col gap-1">
+                    <span>96 Planchet Rd, Concord, ON L4K 2C7</span>
+                    <span>125 Village Green Square, Scarborough, ON M1S 0G3</span>
+                  </span>
                 </div>
               </div>
 
@@ -208,8 +211,8 @@ export default function ContactPage() {
 
               <div className="mt-6 aspect-video overflow-hidden rounded-xl border border-white/10 bg-white/5">
                 <iframe
-                  title="Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184052878!2d-73.98784468428678!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+                  title="Silken Trading - Concord Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0!2d-79.4900!3d43.8100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2b5b5b5b5b5b%3A0x0!2s96+Planchet+Rd%2C+Concord%2C+ON+L4K+2C7!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

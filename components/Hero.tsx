@@ -135,7 +135,7 @@ export default function Hero({
       />
 
       {/* Content */}
-      <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col items-center justify-center px-4 py-28 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col items-center justify-center px-4 py-20 text-center sm:px-6 sm:py-28 lg:px-8">
         {/* Badge */}
         <div
           ref={badgeRef}
@@ -148,7 +148,7 @@ export default function Hero({
 
         <h1
           ref={headlineRef}
-          className="font-display text-4xl tracking-wide text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-5xl"
+          className="font-display text-3xl tracking-wide text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl max-w-5xl"
           style={{ opacity: 0 }}
         >
           <span className="bg-gradient-to-r from-gold-primary via-yellow-glow to-gold-primary bg-clip-text text-transparent">
@@ -167,18 +167,18 @@ export default function Hero({
         {showButtons && (
           <div
             ref={buttonsRef}
-            className="mt-12 flex flex-wrap items-center justify-center gap-5"
+            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap sm:gap-5"
             style={{ opacity: 0 }}
           >
             <Link
               href="/products"
-              className="group relative inline-block overflow-hidden rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-[0_0_40px_rgba(249,200,51,0.35)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(249,200,51,0.55)] hover:scale-105"
+              className="group relative inline-block w-full rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-[0_0_40px_rgba(249,200,51,0.35)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(249,200,51,0.55)] hover:scale-105 sm:w-auto"
             >
               Shop Products
             </Link>
             <Link
               href="/contact"
-              className="inline-block rounded-md border-2 border-gold-primary/70 px-8 py-4 font-semibold text-gold-primary transition-all duration-300 hover:bg-gold-primary/15 hover:shadow-[0_0_35px_rgba(249,200,51,0.25)] hover:scale-105"
+              className="inline-block w-full rounded-md border-2 border-gold-primary/70 px-8 py-4 font-semibold text-gold-primary transition-all duration-300 hover:bg-gold-primary/15 hover:shadow-[0_0_35px_rgba(249,200,51,0.25)] hover:scale-105 sm:w-auto"
             >
               Book Installation
             </Link>

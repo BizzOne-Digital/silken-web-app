@@ -68,7 +68,7 @@ export default function StatsBar() {
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 sm:grid-cols-4 sm:px-6 lg:px-8">
         {stats.map((stat, i) => (
           <div key={stat.label} className="flex flex-col items-center gap-1 text-center">
-            <p className="font-display text-4xl text-gold-primary sm:text-5xl">
+            <p className="font-display text-3xl text-gold-primary sm:text-4xl md:text-5xl">
               <span ref={(el) => { numRefs.current[i] = el; }}>0</span>
               {stat.suffix}
             </p>

@@ -65,7 +65,7 @@ export default function FAQHero() {
       {/* Glow */}
       <div className="absolute right-1/3 top-1/2 -translate-y-1/2 h-72 w-72 rounded-full bg-gold-primary/10 blur-[110px] pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl w-full px-4 py-24 sm:px-6 sm:py-32 lg:px-8 text-center">
+      <div className="relative mx-auto max-w-7xl w-full px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
         <div
           ref={badgeRef}
           className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold-primary/30 bg-gold-primary/10 px-4 py-1.5 text-sm font-medium text-gold-primary backdrop-blur-sm"
@@ -76,7 +76,7 @@ export default function FAQHero() {
         </div>
         <h1
           ref={headingRef}
-          className="font-display text-4xl tracking-wide text-white sm:text-5xl md:text-6xl"
+          className="font-display text-3xl tracking-wide text-white sm:text-4xl md:text-5xl lg:text-6xl"
           style={{ opacity: 0 }}
         >
           Frequently Asked{" "}
@@ -86,7 +86,7 @@ export default function FAQHero() {
         </h1>
         <p
           ref={subRef}
-          className="mx-auto mt-5 max-w-2xl text-lg text-yellow-pastel/90"
+          className="mt-5 max-w-2xl text-lg text-yellow-pastel/90"
           style={{ opacity: 0 }}
         >
           Find answers to common questions about our products and installation services.

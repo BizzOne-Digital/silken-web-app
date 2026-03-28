@@ -43,8 +43,8 @@ export default function ProductDetailClient({
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -74,7 +74,7 @@ export default function ProductDetailClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="font-display text-3xl tracking-wide text-white sm:text-4xl lg:text-5xl"
+              className="font-display text-2xl tracking-wide text-white sm:text-3xl lg:text-4xl"
             >
               {productName}
             </motion.h1>
@@ -128,12 +128,12 @@ export default function ProductDetailClient({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-10 flex flex-wrap gap-4"
+              className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
             >
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   href="/contact"
-                  className="inline-block rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-[0_0_30px_rgba(249,200,51,0.35)] transition-shadow hover:shadow-[0_0_45px_rgba(249,200,51,0.45)]"
+                  className="inline-block w-full rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-[0_0_30px_rgba(249,200,51,0.35)] transition-shadow hover:shadow-[0_0_45px_rgba(249,200,51,0.45)] text-center sm:w-auto"
                 >
                   Book Installation
                 </Link>
@@ -141,7 +141,7 @@ export default function ProductDetailClient({
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   href="/contact"
-                  className="inline-block rounded-md border-2 border-gold-primary/70 px-8 py-4 font-semibold text-gold-primary transition-colors hover:bg-gold-primary/10"
+                  className="inline-block w-full rounded-md border-2 border-gold-primary/70 px-8 py-4 font-semibold text-gold-primary transition-colors hover:bg-gold-primary/10 text-center sm:w-auto"
                 >
                   Enquire Now
                 </Link>

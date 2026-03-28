@@ -107,11 +107,11 @@ export default function ProductCard({
               {product.category}
             </div>
           </div>
-          <div className="p-4">
-            <h3 className="font-display text-lg text-white">{product.name}</h3>
-            <p className="mt-1 text-gold-primary font-medium">{product.price}</p>
+          <div className="p-3 sm:p-4">
+            <h3 className="font-display text-base text-white sm:text-lg">{product.name}</h3>
+            <p className="mt-1 text-sm text-gold-primary font-medium sm:text-base">{product.price}</p>
             {product.description && (
-              <p className="mt-2 line-clamp-2 text-sm text-yellow-pastel/70">
+              <p className="mt-1 line-clamp-2 text-xs text-yellow-pastel/70 sm:mt-2 sm:text-sm">
                 {product.description}
               </p>
             )}

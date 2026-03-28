@@ -24,7 +24,7 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <section
-      className={`relative overflow-hidden py-24 sm:py-32 ${className}`}
+      className={`relative overflow-hidden py-16 sm:py-24 lg:py-32 ${className}`}
     >
       {/* Animated gradient background */}
       <motion.div
@@ -54,7 +54,7 @@ export default function CTASection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-3xl tracking-wide text-white sm:text-4xl md:text-5xl lg:text-6xl"
+          className="font-display text-2xl tracking-wide text-white sm:text-3xl md:text-4xl lg:text-5xl"
         >
           <span className="bg-gradient-to-r from-gold-primary via-yellow-glow to-gold-primary bg-clip-text text-transparent">
             {headline}
@@ -76,7 +76,7 @@ export default function CTASection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="mt-12 flex flex-wrap items-center justify-center gap-5"
+          className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap sm:gap-5"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -84,7 +84,7 @@ export default function CTASection({
           >
             <Link
               href={primaryButtonHref}
-              className="inline-block rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-10 py-4 font-semibold text-luxury-black shadow-[0_0_40px_rgba(249,200,51,0.4)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(249,200,51,0.55)]"
+              className="inline-block w-full rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-10 py-4 font-semibold text-luxury-black shadow-[0_0_40px_rgba(249,200,51,0.4)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(249,200,51,0.55)] text-center sm:w-auto"
             >
               {primaryButtonText}
             </Link>
@@ -95,7 +95,7 @@ export default function CTASection({
           >
             <Link
               href={secondaryButtonHref}
-              className="inline-block rounded-md border-2 border-gold-primary/70 px-10 py-4 font-semibold text-gold-primary transition-all duration-300 hover:bg-gold-primary/15 hover:shadow-[0_0_35px_rgba(249,200,51,0.25)]"
+              className="inline-block w-full rounded-md border-2 border-gold-primary/70 px-10 py-4 font-semibold text-gold-primary transition-all duration-300 hover:bg-gold-primary/15 hover:shadow-[0_0_35px_rgba(249,200,51,0.25)] text-center sm:w-auto"
             >
               {secondaryButtonText}
             </Link>

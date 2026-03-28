@@ -44,19 +44,19 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   return (
     <>
-      <section className="relative border-b border-white/10 py-16 sm:py-24">
+      <section className="relative border-b border-white/10 py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-gold-dark/20 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="font-display text-4xl tracking-wide text-white sm:text-5xl">
+          <h1 className="font-display text-3xl tracking-wide text-white sm:text-4xl lg:text-5xl">
             {service.title}
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-yellow-pastel/90">{service.shortDescription}</p>
+          <p className="mt-3 max-w-2xl text-base text-yellow-pastel/90 sm:text-lg">{service.shortDescription}</p>
         </div>
       </section>
 
-      <section className="border-b border-white/10 py-12 sm:py-16">
+      <section className="border-b border-white/10 py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="relative aspect-video overflow-hidden rounded-lg border border-white/10 lg:aspect-auto lg:min-h-[320px]">
               <Image
                 src={service.image || "/images/placeholder.svg"}
@@ -151,7 +151,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <p className="mt-2 text-yellow-pastel/80">Schedule your installation with us today.</p>
           <Link
             href="/contact"
-            className="mt-6 inline-block rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-glow hover:shadow-glow-strong"
+            className="mt-6 inline-block w-full max-w-xs rounded-md bg-gradient-to-r from-gold-primary to-yellow-glow px-8 py-4 font-semibold text-luxury-black shadow-glow hover:shadow-glow-strong text-center sm:w-auto"
           >
             Book Appointment
           </Link>
