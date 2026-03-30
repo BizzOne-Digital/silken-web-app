@@ -64,7 +64,7 @@ export default function BeforeAfterSlider({
           }}
         />
         <span className="absolute left-4 top-4 rounded bg-luxury-black/80 px-3 py-1 text-sm font-medium text-yellow-pastel">
-          {beforeLabel}
+          {afterLabel}
         </span>
       </div>
       <div
@@ -82,7 +82,7 @@ export default function BeforeAfterSlider({
           }}
         />
         <span className="absolute right-4 top-4 rounded bg-gold-primary/90 px-3 py-1 text-sm font-medium text-luxury-black">
-          {afterLabel}
+          {beforeLabel}
         </span>
       </div>
       <div
