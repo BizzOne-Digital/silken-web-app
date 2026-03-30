@@ -54,8 +54,8 @@ export default function BeforeAfterSlider({
     >
       <div className="absolute inset-0">
         <Image
-          src={beforeImage}
-          alt="Before"
+          src={afterImage}
+          alt="After"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 80vw"
@@ -72,8 +72,8 @@ export default function BeforeAfterSlider({
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
         <Image
-          src={afterImage}
-          alt="After"
+          src={beforeImage}
+          alt="Before"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 80vw"
