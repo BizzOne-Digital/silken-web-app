@@ -109,8 +109,8 @@ export default function HomePage() {
         />
         <div className="mt-10 w-full max-w-4xl mx-auto sm:mt-14">
           <BeforeAfterSlider
-            beforeImage="/images/gallery/transform-1.jpeg"
-            afterImage="/images/gallery/transform-2.jpeg"
+           beforeImage="/before.jpeg"
+            afterImage="/after.jpeg"
             beforeLabel="Before"
             afterLabel="After"
           />
